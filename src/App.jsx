@@ -51,7 +51,15 @@ function App() {
         <p>Latidude (DMS): {latDMS} Longitude (DMS): {longDMS}</p>
       </div>
       <div>
-      <iframe src={`https://www.google.com/maps?q=${latDMS ? latDMS : '27.75749697'},${longDMS ? longDMS : '-82.54083117'}&output=embed`} width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe 
+        src={`https://www.google.com/maps?q=${latDMS ? latDMS : '27.75749697'},${longDMS ? longDMS : '-82.54083117'}&output=embed`} 
+        width="600" 
+        height="450" 
+        style={{border:0}} 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
       </div>
     </div>
   )
